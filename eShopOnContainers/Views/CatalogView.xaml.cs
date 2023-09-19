@@ -33,7 +33,7 @@ public partial class CatalogView : ContentPageBase
     {
         base.OnDisappearing();
 
-WeakReferenceMessenger.Default
-    .Unregister<Messages.AddProductMessage>(this);
+        WeakReferenceMessenger.Default
+            .Unregister<Messages.AddProductMessage>(this);
     }
 }

@@ -10,7 +10,7 @@ public partial class BasketViewModel : ViewModelBase
 {
     private readonly IAppEnvironmentService _appEnvironmentService;
     private readonly ISettingsService _settingsService;
-    private readonly ObservableCollectionEx<BasketItem> _basketItems = new ();
+    private readonly ObservableCollectionEx<BasketItem> _basketItems = new();
 
     public int BadgeCount => _basketItems?.Sum(basketItem => basketItem.Quantity) ?? 0;
 
