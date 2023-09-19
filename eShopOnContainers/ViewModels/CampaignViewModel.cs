@@ -10,7 +10,7 @@ public partial class CampaignViewModel : ViewModelBase
 {
     private readonly ISettingsService _settingsService;
     private readonly IAppEnvironmentService _appEnvironmentService;
-    private readonly ObservableCollectionEx<CampaignItem> _campaigns = new ();
+    private readonly ObservableCollectionEx<CampaignItem> _campaigns = new();
 
     public IReadOnlyList<CampaignItem> Campaigns => _campaigns;
 

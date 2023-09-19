@@ -98,8 +98,8 @@ public class RequestProvider : IRequestProvider
         var httpClient = _httpClient.Value;
 
         httpClient.DefaultRequestHeaders.Authorization =
-            !string.IsNullOrEmpty(token) 
-                ? new AuthenticationHeaderValue("Bearer", token) 
+            !string.IsNullOrEmpty(token)
+                ? new AuthenticationHeaderValue("Bearer", token)
                 : null;
 
         return httpClient;
